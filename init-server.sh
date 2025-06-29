@@ -32,7 +32,7 @@ echo "ℹ️ Please log out and log back in for group changes to take effect (or
 
 sudo yum install -y git
 
-echo $TOKEN > ./DSTClusterConfig/cluster_token.txt
+echo $TOKEN > ./.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
 
 if [[ ! -d ./data/downloaded ]]; then
   mkdir -p ./data/downloaded
