@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PWD=$(pwd)
+export PWD=$(pwd)
 
 # Update system
 sudo yum update -y
