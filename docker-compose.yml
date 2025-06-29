@@ -27,6 +27,7 @@ services:
       - 10999:10999/udp
     volumes:
       - ./.klei/DoNotStarveTogether/MyDediServer:/home/dst/.klei/DoNotStarveTogether/MyDediServer
+      - ./data/downloaded/:/home/dst/downloaded
 
     # These allow to stdin when attaching to the container via `docker attach`
     # Any server commands should be sent to the master shard as it manages its slaves (Caves)
