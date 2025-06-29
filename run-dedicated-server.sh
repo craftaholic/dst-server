@@ -30,9 +30,9 @@ check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
 
 check_for_file "$install_dir/bin64"
 
-cd "$install_dir/bin64" || fail
+cd "$install_dir/bin" || fail
 
-run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
+run_shared=(./dontstarve_dedicated_server_nullrenderer)
 run_shared+=(-console)
 run_shared+=(-cluster "$cluster_name")
 run_shared+=(-monitor_parent_process $$)
