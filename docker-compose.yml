@@ -11,8 +11,7 @@ services:
     links:
       - dst_master
     volumes:
-      - /mnt/data:/home/dst
-      - ./DSTClusterConfig:/home/dst/.klei/DoNotStarveTogether/DSTWhalesCluster
+      - /mnt/dst-server:/home/dst
     environment:
       - SHARD_NAME=Caves
 
@@ -25,8 +24,7 @@ services:
     ports:
       - 10999:10999/udp
     volumes:
-      - /mnt/data:/home/dst
-      - ./DSTClusterConfig:/home/dst/.klei/DoNotStarveTogether/DSTWhalesCluster
+      - /mnt/dst-server:/home/dst
     environment:
       - SHARD_NAME=Master
 
