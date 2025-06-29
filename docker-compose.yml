@@ -16,6 +16,7 @@ services:
 
   dst_master:
     container_name: dst_master
+    platform: linux/amd64
     build:
       context: .
       dockerfile: Dockerfile
@@ -25,7 +26,7 @@ services:
     ports:
       - 10999:10999/udp
     volumes:
-      - /mnt/data:/home/dst
+      - ./data:/dontstarvetogether_dedicated_server
 
     # These allow to stdin when attaching to the container via `docker attach`
     # Any server commands should be sent to the master shard as it manages its slaves (Caves)
