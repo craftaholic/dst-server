@@ -13,8 +13,8 @@ RUN set -x && \
   # Cleanup
   apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p ~/steamcmd/ && \
-  cd ~/steamcmd/ && \
+RUN mkdir -p ./steamcmd/ && \
+  cd ./steamcmd/ && \
   wget "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" && \
   tar -xvzf steamcmd_linux.tar.gz
 
