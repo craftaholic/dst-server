@@ -2,9 +2,7 @@ version: '3'
 services:
   dst_caves:
     container_name: dst_caves
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: mathielo/dst-dedicated-server:0.3.1
     restart: always
     ports:
       - 10998:10998/udp
@@ -20,9 +18,7 @@ services:
 
   dst_master:
     container_name: dst_master
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: mathielo/dst-dedicated-server:0.3.1
     restart: always
     networks:
       - dst_cluster
