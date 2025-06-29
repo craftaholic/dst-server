@@ -1,4 +1,3 @@
-version: '3'
 services:
   # dst_caves:
   #   container_name: dst_caves
