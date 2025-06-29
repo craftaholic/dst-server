@@ -26,7 +26,7 @@ check_for_file "$dontstarve_dir/$cluster_name/cluster_token.txt"
 check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"
 check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
 
-./steamcmd.sh +@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login anonymous +force_install_dir $install_dir +app_update 343050 validate +quit
+./steamcmd.sh +force_install_dir $install_dir +@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login anonymous +app_update 343050 validate +quit
 
 check_for_file "$install_dir/bin"
 
