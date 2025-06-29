@@ -39,8 +39,8 @@ fi
 modoverrides="$dontstarve_dir/$cluster_name/mods/modoverrides.lua"
 if [ -f "$modoverrides" ]
 then
-  cp $modoverrides "$HOME/.klei/DoNotStarveTogether/DSTWhalesCluster/Master/"
-  cp $modoverrides "$HOME/.klei/DoNotStarveTogether/DSTWhalesCluster/Caves/"
+  cp $modoverrides "$dontstarve_dir/$cluster_name/Master/"
+  cp $modoverrides "$dontstarve_dir/$cluster_name/Caves/"
 fi
 
 check_for_file "$install_dir/bin"
