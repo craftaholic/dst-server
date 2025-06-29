@@ -26,7 +26,6 @@ services:
     ports:
       - 10999:10999/udp
     volumes:
-      - ./data/downloaded:/home/dst/downloaded
       - ./.klei/DoNotStarveTogether/MyDediServer:/home/dst/.klei/DoNotStarveTogether/MyDediServer
 
     # These allow to stdin when attaching to the container via `docker attach`
