@@ -26,16 +26,14 @@ check_for_file "$dontstarve_dir/$cluster_name/cluster_token.txt"
 check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"
 check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
 
-./steamcmd.sh +force_install_dir "$install_dir" +login anonymous +app_update 343050 validate +quit
+./steamcmd.sh +@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login anonymous +force_install_dir $force_install_dir +app_update 343050 validate +quit
 
 check_for_file "$install_dir/bin"
 
 cd "$install_dir/bin" || fail
 
 run_shared=(./dontstarve_dedicated_server_nullrenderer)
-run_shared+=(-console)
 run_shared+=(-cluster "$cluster_name")
-run_shared+=(-monitor_parent_process $$)
 
 "${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
 "${run_shared[@]}" -shard Master | sed 's/^/Master: /'
