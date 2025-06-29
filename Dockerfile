@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:latest
 
 # Create specific user to run DST server
 RUN useradd -ms /bin/bash/ dst
