@@ -11,9 +11,8 @@ services:
     links:
       - dst_master
     volumes:
+      - /mnt/data:/home/dst
       - ./DSTClusterConfig:/home/dst/.klei/DoNotStarveTogether/DSTWhalesCluster
-      - ./volumes/mods:/home/dst/server_dst/mods
-      - ./volumes/steam:/home/dst/steam
     environment:
       - SHARD_NAME=Caves
 
@@ -26,9 +25,8 @@ services:
     ports:
       - 10999:10999/udp
     volumes:
+      - /mnt/data:/home/dst
       - ./DSTClusterConfig:/home/dst/.klei/DoNotStarveTogether/DSTWhalesCluster
-      - ./volumes/mods:/home/dst/server_dst/mods
-      - ./volumes/steam:/home/dst/steam
     environment:
       - SHARD_NAME=Master
 
