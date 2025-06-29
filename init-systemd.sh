@@ -13,7 +13,7 @@ After=docker.service
 [Service]
 Type=oneshot
 RemainAfterExit=true
-WorkingDirectory=${PWD}
+WorkingDirectory=/mnt/dst-server
 ExecStart=${COMPOSE_BIN} up --build -d
 ExecStop=${COMPOSE_BIN} down
 TimeoutStartSec=0
