@@ -41,3 +41,21 @@ ServerModSetup("588560555")
 -- Epic Healthbar
 -- https://steamcommunity.com/sharedfiles/filedetails/?id=1185229307
 ServerModSetup("1185229307")
+
+-- More Drop
+ServerModSetup("3126227727")
+
+-- Craftable Gear
+ServerModSetup("478005098")
+
+-- Extended indicator
+ServerModSetup("358749986")
+
+-- Increased stack size
+ServerModSetup("374550642")
+
+-- Infinite tent
+ServerModSetup("356930882")
+
+-- Multi Rock
+ServerModSetup("604761020")

@@ -69,4 +69,22 @@ return {
   -- Epic Healthbar
   -- https://steamcommunity.com/sharedfiles/filedetails/?id=1185229307
   ["workshop-1185229307"] = { configuration_options = {}, enabled = true }
+
+  -- More Drop
+  ["workshop-3126227727"] = { configuration_options = {}, enabled = true }
+
+  -- Craftable Gear
+  ["workshop-478005098"] = { configuration_options = {}, enabled = true }
+
+  -- Extended indicator
+  ["workshop-358749986"] = { configuration_options = {}, enabled = true }
+
+  -- Increased stack size
+  ["workshop-374550642"] = { configuration_options = {}, enabled = true }
+
+  -- Infinite tent
+  ["workshop-356930882"] = { configuration_options = {}, enabled = true }
+
+  -- Multi Rock
+  ["workshop-604761020"] = { configuration_options = {}, enabled = true }
 }
