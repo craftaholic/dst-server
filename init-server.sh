@@ -36,4 +36,4 @@ newgrp docker
 
 echo $TOKEN > ./DSTClusterConfig/cluster_token.txt
 
-sudo ./init-systemd.sh
+./init-systemd.sh
