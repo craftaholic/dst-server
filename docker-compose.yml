@@ -17,7 +17,9 @@ services:
 
   dst_master:
     container_name: dst_master
-    image: mathielo/dst-dedicated-server:0.3.1
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: always
     networks:
       - dst_cluster
