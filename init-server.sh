@@ -36,8 +36,4 @@ newgrp docker
 
 echo $TOKEN > ./DSTClusterConfig/cluster_token.txt
 
-if [ ! -d ./data/save ]; then
-  cp -R ./klei ./data/save
-fi
-
 ./init-systemd.sh
