@@ -36,4 +36,9 @@ newgrp docker
 
 echo $TOKEN > ./DSTClusterConfig/cluster_token.txt
 
+if [[ ! -d ./data/downloaded ]]; then
+  mkdir -p ./data/downloaded
+  echo "Just random string" > ./data/downloaded/Readme.md
+fi
+
 ./init-systemd.sh
