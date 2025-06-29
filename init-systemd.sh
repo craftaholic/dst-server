@@ -1,7 +1,6 @@
 #!/bin/bash
 
 SERVICE_NAME=dst
-COMPOSE_DIR=/home/ec2-user/dst-server
 COMPOSE_BIN=/usr/local/bin/docker-compose  # Change if using `docker compose` plugin
 
 # Create systemd unit file
@@ -14,7 +13,7 @@ After=docker.service
 [Service]
 Type=oneshot
 RemainAfterExit=true
-WorkingDirectory=${COMPOSE_DIR}
+WorkingDirectory=${PWD}
 ExecStart=${COMPOSE_BIN} up -d
 ExecStop=${COMPOSE_BIN} down
 TimeoutStartSec=0

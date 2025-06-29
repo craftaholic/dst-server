@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PWD=$(pwd)
+
 # Update system
 sudo yum update -y
 
@@ -30,4 +32,4 @@ echo "ℹ️ Please log out and log back in for group changes to take effect (or
 
 sudo yum install -y git
 
-. ./init-systemd.sh
+./init-systemd.sh

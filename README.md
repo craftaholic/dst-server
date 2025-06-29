@@ -80,7 +80,7 @@ You only need the [Docker desktop standalone](https://docs.docker.com/engine/ins
 
 Clone this repository in your home folder:
 
-    cd ~ && git clone https://github.com/mathielo/dst-dedicated-server.git
+    cd /mnt && git clone https://github.com/mathielo/dst-dedicated-server.git
 
 > :cop: Do **not** `sudo git clone` or your might run into permission issues :angel:
 
