@@ -94,7 +94,7 @@ Check the [detailed instructions to generate a cluster token](./docs/ClusterToke
 
 You can easily do that replacing `InsertYourTokenHere` in the following command and executing it in your server:
 
-    echo $TOKEN > ~/dst-dedicated-server/DSTClusterConfig/cluster_token.txt
+```export TOKEN=<your-token>```
 
 :closed_lock_with_key: The account that generates the token automatically gains admin access in-game, meaning you can rollback, regenerate the world or use console commands while playing.
 
