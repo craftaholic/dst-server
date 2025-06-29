@@ -18,7 +18,7 @@ RUN mkdir -p ./steamcmd/ && \
   wget "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" && \
   tar -xvzf steamcmd_linux.tar.gz
 
-COPY . .
+COPY ./run-dedicated-server.sh /home/dst/run-dedicated-server.sh
 
 RUN chown -R dst:dst /home/dst 
 
