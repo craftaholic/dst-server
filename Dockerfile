@@ -16,7 +16,10 @@ RUN set -x && \
 RUN mkdir -p ./steamcmd/ && \
   cd ./steamcmd/ && \
   wget "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" && \
-  tar -xvzf steamcmd_linux.tar.gz
+  tar -xvzf steamcmd_linux.tar.gz && \
+  chown -R dst:dst ./
+
+COPY . .
 
 USER dst
 
