@@ -28,7 +28,7 @@ check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
 
 ./steamcmd.sh +force_install_dir "$install_dir" +login anonymous +app_update 343050 validate +quit
 
-check_for_file "$install_dir/bin64"
+check_for_file "$install_dir/bin"
 
 cd "$install_dir/bin" || fail
 
