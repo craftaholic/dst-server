@@ -11,7 +11,6 @@ RUN set -x && \
   apt-get install -y libstdc++6:i386 libgcc1:i386 libcurl4-gnutls-dev:i386 wget && \
   chown -R dst:dst ./ && \
   # Cleanup
-  apt-get autoremove --purge -y wget && \
   apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p ~/steamcmd/ && \
