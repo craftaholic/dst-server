@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SERVICE_NAME=myapp
-COMPOSE_DIR=/home/ec2-user/myapp
+SERVICE_NAME=dst
+COMPOSE_DIR=/home/ec2-user/dst-server
 COMPOSE_BIN=/usr/local/bin/docker-compose  # Change if using `docker compose` plugin
 
 # Create systemd unit file

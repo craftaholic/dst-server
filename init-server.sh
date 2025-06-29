@@ -29,3 +29,5 @@ echo "✅ Docker and Docker Compose installed successfully."
 echo "ℹ️ Please log out and log back in for group changes to take effect (or run: newgrp docker)."
 
 sudo yum install -y git
+
+. ./init-systemd.sh
