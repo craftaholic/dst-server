@@ -22,5 +22,12 @@ RUN mkdir -p ./steamcmd/ && \
 COPY . .
 
 USER dst
+RUN ./steamcmd/steamcmd.sh \
+  +force_install_dir "/home/dst/dontstarvetogether_dedicated_server" \
+  +@ShutdownOnFailedCommand 1 \
+  +@NoPromptForPassword 1 \
+  +login anonymous \
+  +app_update 343050 validate \
+  +quit
 
 ENTRYPOINT ["/home/dst/run-dedicated-server.sh"]
