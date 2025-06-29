@@ -7,3 +7,6 @@ data
 .klei/DoNotStarveTogether/MyDediServer/Master/save/
 .klei/DoNotStarveTogether/MyDediServer/Master/server_chat_log.txt
 .klei/DoNotStarveTogether/MyDediServer/Master/server_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Caves/server.ini
+.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
+.klei/DoNotStarveTogether/MyDediServer/Master/server.ini
