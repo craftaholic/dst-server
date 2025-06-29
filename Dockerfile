@@ -14,6 +14,11 @@ RUN set -x && \
   apt-get autoremove --purge -y wget && \
   apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p ~/steamcmd/ && \
+  cd ~/steamcmd/ && \
+  wget "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" && \
+  tar -xvzf steamcmd_linux.tar.gz
+
 USER dst
 
 ENTRYPOINT ["/home/dst/run-dedicated-server.sh"]
