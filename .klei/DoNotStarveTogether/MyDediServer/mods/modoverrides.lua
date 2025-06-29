@@ -87,4 +87,7 @@ return {
 
   -- Multi Rock
   ["workshop-604761020"] = { configuration_options = {}, enabled = true },
+
+  -- 45 Inventory
+  ["workshop-3075429483"] = { configuration_options = {}, enabled = true },
 }

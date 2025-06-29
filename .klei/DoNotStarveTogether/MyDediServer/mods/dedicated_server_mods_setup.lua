@@ -59,3 +59,6 @@ ServerModSetup("356930882")
 
 -- Multi Rock
 ServerModSetup("604761020")
+
+-- 45 Inventory
+ServerModSetup("3075429483")
