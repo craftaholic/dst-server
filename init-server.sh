@@ -32,8 +32,6 @@ echo "ℹ️ Please log out and log back in for group changes to take effect (or
 
 sudo yum install -y git
 
-newgrp docker
-
 echo $TOKEN > ./DSTClusterConfig/cluster_token.txt
 
 if [[ ! -d ./data/downloaded ]]; then
@@ -42,3 +40,5 @@ if [[ ! -d ./data/downloaded ]]; then
 fi
 
 ./init-systemd.sh
+
+newgrp docker
