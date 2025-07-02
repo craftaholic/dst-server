@@ -3,7 +3,7 @@ set -e
 
 # Attach and send shutdown command
 echo "[INFO] Sending c_shutdown() to dst_master..."
-docker exec dst_master screen -S "dontstarve" -p 0 -X stuff $'c_shutdown()\n'
+docker exec dst_master /bin/sh -c "echo 'c_shutdown()' > /dev/stdin"
 
 # Wait for the container to stop
 echo "[INFO] Waiting for dst_master to stop..."
