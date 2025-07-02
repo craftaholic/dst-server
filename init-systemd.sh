@@ -15,7 +15,7 @@ Type=oneshot
 RemainAfterExit=true
 WorkingDirectory=/mnt/dst-server
 ExecStart=${COMPOSE_BIN} up --build -d
-ExecStop=/mnt/dst-server/scripts/shutdown-dst.sh
+ExecStop=${COMPOSE_BIN} down
 TimeoutStartSec=0
 User=ec2-user
 
